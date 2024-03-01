@@ -2,7 +2,7 @@ package Lambda_Stream_AssosiativeArrays;
 
 import java.util.Scanner;
 
-public class WordFilter_03 {
+public class WordFilter_04 {
 
     public static void main(String[] args) {
 
