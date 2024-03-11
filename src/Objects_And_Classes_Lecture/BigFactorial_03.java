@@ -1,5 +1,6 @@
 package Objects_And_Classes_Lecture;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class BigFactorial_03 {
@@ -9,13 +10,12 @@ public class BigFactorial_03 {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-        int sum = 1;
+        BigInteger factorial = new BigInteger("1");
+        for (int number = 1; number <= n; number++) {
+            factorial = factorial.multiply(BigInteger.valueOf(number));
 
-        for (int number = 2; number <= n; number++) {
-            int newNumber = number * number;
-            sum += newNumber;
         }
 
-        System.out.println(sum);
+        System.out.println(factorial);
     }
 }

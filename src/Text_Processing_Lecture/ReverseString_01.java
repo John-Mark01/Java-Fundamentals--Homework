@@ -8,9 +8,15 @@ public class ReverseString_01 {
 
         Scanner scanner = new Scanner(System.in);
 
-        StringBuilder sb = new StringBuilder(scanner.nextLine());
+        String input = scanner.nextLine();
 
-        sb.append(", Hey");
-        System.out.println(sb.toString());
+        while (!input.equals("end")) {
+
+            StringBuilder reversed = new StringBuilder(input);
+            reversed.reverse();
+
+            System.out.printf("%s = %s\n", input, reversed);
+            input = scanner.nextLine();
+        }
     }
 }
