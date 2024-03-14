@@ -13,3 +13,10 @@ public class ReverseString_01 {
         while (!input.equals("end")) {
 
             StringBuilder reversed = new StringBuilder(input);
+            reversed.reverse();
+
+            System.out.printf("%s = %s\n", input, reversed);
+            input = scanner.nextLine();
+        }
+    }
+}
